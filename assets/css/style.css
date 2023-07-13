@@ -156,10 +156,11 @@ body {
 \*-----------------------------------*/
 
 body.dark {background-color: var(--dark);}
-
 .navbar.active.dark {background-color: var(--dark); color: var(--white)}
 .navbar.dark a{color: var(--white)}
-body.dark h1, body.dark .support a {color: #fff;}
+.service-item-text.dark{
+  color: var(--white)
+}
 
 
 /*-----------------------------------*\
@@ -210,11 +211,12 @@ h3 > a { color: inherit; }
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .5s; 
+  transition: all 0.3s ease-in-out; 
 }
 
 .btn-primary:is(:hover, :focus) {
-  transition: all .5s; 
+  border: 1px solid var(--dark);
+  transition: all 0.3s ease-in-out; 
   background: linear-gradient(to right, var(--dark), transparent);
   --color: var(--white);
   --border-color: var(--eerie-black);
@@ -228,7 +230,8 @@ h3 > a { color: inherit; }
 }
 
 .btn-secondary:is(:hover, :focus) {
-  transition: all .5s; 
+  border: 1px solid var(--dark);
+  transition: all 0.3s ease-in-out; 
   background: linear-gradient(to right, var(--dark), transparent);
   --color: var(--white);
   --border-color: var(--eerie-black);
@@ -289,8 +292,6 @@ h3 > a { color: inherit; }
   justify-content: space-between;
   align-items: center;
 }
-
-
 
 .checkbox {
   opacity: 0;
@@ -413,13 +414,12 @@ h3 > a { color: inherit; }
   padding: 30px 25px;
   z-index: 3;
   visibility: hidden;
-  transition: 0.25s var(--cubic-out);
 }
 
-.navbar.active {
+.header.active .navbar.active {
   visibility: visible;
-  transform: translateX(-300px);
-  transition: 0.5s var(--cubic-in);
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  
 }
 
 .navbar-top {
@@ -453,7 +453,9 @@ h3 > a { color: inherit; }
   pointer-events: all;
 }
 
-
+.cart-icon {
+  font-size: var(--fs-4);
+}
 
 
 
@@ -475,24 +477,21 @@ h3 > a { color: inherit; }
 .hero .container { width: 100%; }
 
 .hero-subtitle {
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  letter-spacing: 0.2em;
+  text-shadow: 0 0 5px var(--dark);
+  color: var(--dark);
   font-size: var(--fs-4);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-600);
   margin-bottom: 20px;
 }
 
+
 .hero-title {
+  letter-spacing: 0.1em;
   margin-bottom: 35px;
   max-width: 12ch;
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--dark);
+  text-shadow: 0 0 5px var(--dark);
 }
 
 
@@ -519,15 +518,23 @@ h3 > a { color: inherit; }
   gap: 20px;
 }
 
-.service-item-icon { width: 45px; }
+.service-item-icon { width: 60px;}
 
-.service-item-icon img { margin-inline: auto; }
+.service-item-icon img { margin-inline: auto; fill: blue;}
+
+.fa-2xl {
+  font-size: 2.5em !important;
+}
 
 .service-item-title {
   letter-spacing: .2em;
   text-transform: uppercase;
   padding-bottom: 10px;
-  color: var(--eerie-black);
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-size: 15px;
   font-weight: var(--fw-600);
 }
@@ -538,11 +545,6 @@ h3 > a { color: inherit; }
   font-size: 12px;
   color: var(--eerie-black);
 }
-
-.service-item-text.dark {
-  color: white;
-}
-
 
 /*-----------------------------------*\
  * #CATETORY
@@ -1257,18 +1259,22 @@ h3 > a { color: inherit; }
   }
 
   .header.active .navbar {
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    transform: translateY(80px);
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(5px);
     position: fixed;
-    top: 0;
+    top: -80px;
     box-shadow: 0 2px 20px hsla(0, 0%, 0%, 0.1);
   }
 
   .header.active .navbar.dark {
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    transform: translateY(80px);
     background-color: rgba(66, 65, 65, 0.8);
     backdrop-filter: blur(5px);
     position: fixed;
-    top: 0;
+    top: -80px;
     box-shadow: 0 2px 20px hsla(0, 0%, 0%, 0.1);
   }
 

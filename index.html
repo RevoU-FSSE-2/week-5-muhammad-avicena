@@ -5,26 +5,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fashion</title>
+  <title>Luxury Collection</title>
 
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="assets/images/logo-banner.png" type="image/svg+xml">
 
   <!-- 
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- 
     - google font link
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <style>
-   
-  </style>
 </head>
 
 <body>
@@ -37,14 +35,6 @@
     <div class="container">
 
       <div class="overlay" data-overlay></div>
-
-      <!-- <div class="header-search">
-        <input type="search" name="search" placeholder="Search Product..." class="input-field">
-
-        <button class="search-btn" aria-label="Search">
-          <ion-icon name="search-outline"></ion-icon>
-        </button>
-      </div> -->
 
       <a href="#" class="logo">
         <img src="./assets/images/logo-banner.png" alt="Casmart logo" width="130" height="31">
@@ -59,13 +49,6 @@
         <span></span>
       </button>
     </div>
-
-
-    <!-- <button class="header-action-btn">
-          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-
-          <p class="header-action-label">Search</p>
-        </button> -->
 
     <nav class="navbar" data-navbar>
 
@@ -83,7 +66,15 @@
       </div>
 
       <ul class="navbar-list">
-
+        <!-- <li>
+          <div class="header-search">
+            <input type="search" name="search" placeholder="Search Product..." class="input-field">
+    
+            <button class="search-btn" aria-label="Search">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div> 
+        </li> -->
         <li>
           <a href="#home" class="navbar-link">Home</a>
         </li>
@@ -103,18 +94,25 @@
         <li>
           <a href="#" class="navbar-link">Contact</a>
         </li>
-        <div class="header-actions">
-
-          <button class="header-action-btn">
-            <div>
-              <input type="checkbox" class="checkbox" id="checkbox">
-              <label for="checkbox" class="checkbox-label">
-                <ion-icon class="moon" name="moon"></ion-icon>
-                <ion-icon class="sun" name="sunny"></ion-icon>
-                <span class="ball"></span>
-              </label>
-            </div>
-          </button>
+        <li>
+          <div class="header-actions">
+            <button class="header-action-btn">
+              <div>
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="checkbox-label">
+                  <ion-icon class="moon" name="moon"></ion-icon>
+                  <ion-icon class="sun" name="sunny"></ion-icon>
+                  <span class="ball"></span>
+                </label>
+              </div>
+            </button>
+        </li>
+        </div>
+        <li>
+          <div class="cart-icon">
+            <ion-icon name="cart-outline"></ion-icon>
+          </div>
+        </li>
       </ul>
 
     </nav>
@@ -136,7 +134,7 @@
 
             <p class="hero-subtitle">Elevate Your Style</p>
 
-            <h2 class="h1 hero-title">Discover the Essence of Fashion</h2>
+            <h2 class="h1 hero-title">Discover The Essence of Fashion</h2>
 
             <button class="btn btn-primary">Explore Our Collection</button>
 
@@ -156,54 +154,48 @@
 
             <li class="service-item">
               <div class="service-item-icon">
-                <img src="./assets/images/service-icon-1.svg" alt="Service icon">
+                <i class="fa-solid fa-truck-fast fa-bounce fa-2xl" style="color: #8fb8ff;"></i>
               </div>
 
               <div class="service-content">
                 <p class="service-item-title">Free Shipping</p>
-
-                <p class="service-item-text">On All Order Over Indonesia</p>
+                <p class="service-item-text">On All Order Over Indonesia.</p>
               </div>
             </li>
 
             <li class="service-item">
               <div class="service-item-icon">
-                <img src="./assets/images/service-icon-2.svg" alt="Service icon">
+                <i class="fa-solid fa-boxes-packing fa-bounce fa-2xl" style="color: #8fb8ff;"></i>
               </div>
 
               <div class="service-content">
                 <p class="service-item-title">Easy Returns</p>
-
-                <p class="service-item-text">30 Day Returns Policy</p>
+                <p class="service-item-text">30 Day Returns Policy.</p>
               </div>
             </li>
 
             <li class="service-item">
               <div class="service-item-icon">
-                <img src="./assets/images/service-icon-3.svg" alt="Service icon">
+                <i class="fa-brands fa-cc-visa fa-bounce fa-2xl" style="color: #8fb8ff;"></i>
               </div>
 
               <div class="service-content">
                 <p class="service-item-title">Easy Payment</p>
-
-                <p class="service-item-text">100% Secure Gaurantee, Fast, & Easy !</p>
+                <p class="service-item-text">100% Secure Gaurantee, Fast, & Easy.</p>
               </div>
             </li>
 
             <li class="service-item">
               <div class="service-item-icon">
-                <img src="./assets/images/service-icon-4.svg" alt="Service icon">
+                <i class="fa-solid fa-ribbon fa-bounce fa-2xl" style="color: #8fb8ff;"></i>
               </div>
 
               <div class="service-content">
-                <p class="service-item-title">Special Support</p>
-
-                <p class="service-item-text">24/7 Dedicated Support</p>
+                <p class="service-item-title">Premium Materials</p>
+                <p class="service-item-text">We deliver exceptional quality that you can trust.</p>
               </div>
             </li>
-
           </ul>
-
         </div>
       </section>
 
