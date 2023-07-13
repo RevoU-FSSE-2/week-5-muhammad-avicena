@@ -238,6 +238,7 @@ h3 > a { color: inherit; }
 .header-search { display: none; }
 
 .header {
+  /* background-color: rgba(245,192,76,255); */
   letter-spacing: .2em;
   text-transform: uppercase;
   position: absolute;
@@ -258,6 +259,23 @@ h3 > a { color: inherit; }
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.announcement {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-weight: var(--fw-500);
+  background-color: black;
+}
+
+.announcement a{
+  color: #f5c04c;
 }
 
 .checkbox {
@@ -371,7 +389,6 @@ h3 > a { color: inherit; }
 .header-action-btn .btn-badge.green { --background: var(--middle-blue-green); }
 
 .navbar {
-  background-color: #fff;
   position: fixed;
   top: 0;
   right: -300px;
