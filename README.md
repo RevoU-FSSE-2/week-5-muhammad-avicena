@@ -77,13 +77,13 @@ The first step to deploy in Netlify is creating a new account or use existing ac
 
 After you successfully login, you will be redirected to dashboard of Netlify app. In this scenario, you will need to import your existing project from github to netlify. Add new site -> Import existing project -> Connect via GitHub 
 
-![Alt text](img/2.png)
+![Alt text](readme-images/2.png)
 
 2. Auto Deploy with Netlify !
 
 One of the benefit using your GitHub account connected to Netlify is that you don't have to worry about re-deploying your project manually, once there are changes that have been pushed in your repository, it will automatically re-deployed by Netlify within second.
 
-![Alt text](img/3.png)
+![Alt text](readme-images/3.png)
 
 3. Domain Registrar with NiagaHoster & Cloudfire !
 
@@ -91,7 +91,7 @@ Go to [https://niagahoster.co.id](https://niagahoster.co.id) and log in or creat
 
 After that, go to [https://dash.cloudflare.com/](https://dash.cloudflare.com/) and log in or create a new account. You will be redirected to dashboard, add the domain that you have bought previously.
 
-![Alt text](img/4.png)
+![Alt text](readme-images/4.png)
 
 4. Modify your project with favorite customize domain !
 
@@ -114,7 +114,7 @@ CNAME luxury-shop     avicena-week5.netlify.com
 
 Final step, go to Dashboard Cloudfire -> DNS Records -> Add record domain -> set them accordingly.
 
-![Alt text](img/5.png)
+![Alt text](readme-images/5.png)
 
 5. Congratulations, You're done !
 
