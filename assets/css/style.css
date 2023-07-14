@@ -1029,7 +1029,7 @@ h3 > a { color: inherit; }
  * responsive for larger than 480px screen
  */
 
-@media (max-width: 480px) {
+@media (min-width: 360px) {
 
   /**
    * CUSTOM PROPERTY
@@ -1099,15 +1099,10 @@ h3 > a { color: inherit; }
   .service-item {
     margin-right: 10px;
   }
-  .service-list {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin: 0 50px;
-  }
 
   .service-item-text {
     letter-spacing: .1em;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .service-item-title {
@@ -1143,7 +1138,7 @@ h3 > a { color: inherit; }
  * responsive for larger than 580px screen
  */
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 
   /**
    * CUSTOM PROPERTY
@@ -1163,10 +1158,8 @@ h3 > a { color: inherit; }
 
   .header { 
     display: grid;
-    grid-template-columns: auto auto;
     background-color: var(--white);
     margin-bottom: 68px;
-    border-bottom: 1px solid var(--black);
   }
 
   .header .container {
@@ -1317,7 +1310,7 @@ h3 > a { color: inherit; }
   }
 
   .logo{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 800;
     background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
     -webkit-background-clip: text;
