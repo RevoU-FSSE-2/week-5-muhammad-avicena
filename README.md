@@ -3,7 +3,7 @@
 
 <h1 align="left">Fancy to see you here ! <img src="https://raw.githubusercontent.com/muhammad-avicena/profile/master/wave.gif" width="30px" height="30px" /> </h1>
 
-hi, I'm Muhammad Avicena. In today's digital age, having an online presence is essential, and a personal website serves as a platform to showcase your skills, experiences, and portfolio to the world. I have built this responsive modern personal website to highlight my work. I hope you like it !
+hi, I'm Muhammad Avicena. I am delighted to present my latest project—a beautifully designed fashion shop that exudes simplicity and elegance. From its stylish layout to the carefully curated collection of clothing and accessories. With a focus on customer satisfaction, a knowledgeable staff, and a commitment to sustainability, this fashion shop offers a wide range of fashionable products while maintaining a high standard of quality and style. I hope you like it !
 
 I am committed to staying up-to-date with industry trends and using the latest tools to develop innovative solutions that surpass expectations.
 Interested to have collaboration ? Find me on:
@@ -16,16 +16,14 @@ Interested to have collaboration ? Find me on:
 ## STRUCTURE 📰
 
 - Header
+  - Announcement
   - Navbar
 - Main
   - Hero section
-    - Hero article text
-  - About section
-    - About article text
-  - Skills section
-    - Grid
-  - Contact section
-    - Form 
+  - Collection section
+  - Product section
+  - Blog section
+  - Newsletter section
 - Footer
 
 ## INGREDIENTS I USE 📜
@@ -42,7 +40,7 @@ You will need a github account to clone this repository, make sure you're connec
 
 1. Clone this repository
 ```
-git clone https://github.com/RevoU-FSSE-2/week-4-muhammad-avicena.git
+git clone https://github.com/RevoU-FSSE-2/week-5-muhammad-avicena.git
 ```
 2. Create a new branch named "develop", in this repository we would like to develop the website with personal information. 
 ```
@@ -69,9 +67,9 @@ git push origin main
 
 ## DEPLOYMENT  ⚙️
 
-The project has been successfully deployed using Netlify. You can access the production version of the website by following this link: [https://avicena.site](https://avicena.site) or [this link](https://www.avicena.site).
+The project has been successfully deployed using Netlify. You can access the production version of the website by following this link: [https://luxury-shop.avicena.dev](https://luxury-shop.avicena.dev) or [this link](https://www.luxury-shop.avicena.dev).
 ### Deployment status : 
-[![Netlify Status Production](https://api.netlify.com/api/v1/badges/25b51f31-5c41-44f4-84b3-4b1870f47e44/deploy-status)](https://app.netlify.com/sites/avicena-week2/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fd84e054-64dc-46b4-967d-198778bd6c8a/deploy-status)](https://app.netlify.com/sites/avicena-week5/deploys)
 
 1. Connect your account to Netlify !
 
@@ -108,15 +106,10 @@ Copy these nameserver and jump into dashboard overview of NiagaHoster. You shoul
 
 After that, go to Netlify Dashboard -> open your project -> Custom domain -> Add domain that you have set previously. In thise case, you will see they're awaiting for external DNS. You will get some information such as IPv4 and domain name that you should input it to CloudFire.
 
-For primary domain :
+Use subdomain :
 ```
-Type  Value   Content Name
-A     @       75.2.60.5
-```
-For subdomain :
-```
-Type  Value   Content Name
-CNAME www     avicena-week4.netlify.com
+Type  Value           Content Name
+CNAME luxury-shop     avicena-week5.netlify.com
 ```
 
 Final step, go to Dashboard Cloudfire -> DNS Records -> Add record domain -> set them accordingly.
