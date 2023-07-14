@@ -9,7 +9,8 @@ const navCloseBtn = document.querySelector("[data-nav-close-btn]");
 const serviceItemText = document.querySelectorAll(".service-item-text");
 const productCategoryText = document.querySelectorAll(".filter-btn.active");
 const cardTitle = document.querySelectorAll(".card-title");
-const cardPrice = document.querySelectorAll(".card-price");
+const cardPrice = document.querySelectorAll(".card-price"); 
+const cardMetaLink = document.querySelectorAll(".card-meta-link");
 
 const navElemArr = [overlay, navOpenBtn, navCloseBtn];
 
@@ -21,7 +22,7 @@ for (let i = 0; i < navElemArr.length; i++) {
 }
 
 /**
- * add active class on header when scrolled 200px from top
+ * add active class on header when scrolled 300px from top
  */
 
 window.addEventListener("scroll", function () {
@@ -48,6 +49,9 @@ checkbox.addEventListener("change", () => {
     element.classList.toggle("dark");
   });
   cardPrice.forEach((element) => {
+    element.classList.toggle("dark");
+  });
+  cardMetaLink.forEach((element) => {
     element.classList.toggle("dark");
   });
 });
