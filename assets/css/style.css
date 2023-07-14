@@ -1157,7 +1157,7 @@ h3 > a { color: inherit; }
   }
 
   .header { 
-    display: grid;
+    display: flex;
     background-color: var(--white);
     margin-bottom: 68px;
   }
